@@ -1,86 +1,84 @@
-# CodeAlpha Internship – Task 3: Data Visualization
+# CodeAlpha Internship Tasks
 
-## Project Overview
+This repository contains the projects completed as part of my CodeAlpha Internship.
 
-This project was completed as part of the CodeAlpha Data Analytics Internship.
+## Task 1 – Web Scraping
 
-The objective of this task is to transform the book dataset into meaningful visualizations using Python and Matplotlib.
+A Python web scraping project that extracts book information from a website and stores the collected data in a CSV file.
 
-The visualizations help identify patterns in book prices, ratings, and the relationship between price and rating.
+### Technologies Used
+- Python
+- Requests
+- BeautifulSoup
+- Pandas
 
-## Dataset
+### Output
+- books_dataset.csv
 
-The dataset contains information about books collected from the Books to Scrape website.
+---
 
-### Columns Used
+## Task 2 – Exploratory Data Analysis (EDA)
 
-- Title
-- Price
-- Rating
-- Availability
-- Book_URL
+Performed Exploratory Data Analysis on the collected books dataset to understand the data, identify patterns, and generate useful insights.
 
-## Technologies Used
+### Analysis Performed
+- Data inspection
+- Missing value checking
+- Statistical summary
+- Price analysis
+- Rating analysis
+- Data visualization
 
+### Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+
+### Files
+- eda_analysis.py
+- books_dataset.csv
+
+---
+
+## Task 3 – Data Visualization
+
+Created visualizations to understand the distribution and relationship between book prices and ratings.
+
+### Visualizations Created
+- Price Distribution
+- Rating Distribution
+- Price vs Rating
+- Top 10 Most Expensive Books
+
+### Technologies Used
 - Python
 - Pandas
 - Matplotlib
 
-## Visualizations Created
+### Files
+- visualization.py
+- price_distribution.png
+- rating_distribution.png
+- price_vs_rating.png
+- top_10_expensive_books.png
 
-### 1. Book Price Distribution
+---
 
-A histogram was created to show how book prices are distributed across the dataset.
+## Skills Demonstrated
 
-**File:** `price_distribution.png`
+- Python Programming
+- Web Scraping
+- Data Collection
+- Data Cleaning
+- Exploratory Data Analysis
+- Data Visualization
+- Pandas
+- NumPy
+- Matplotlib
+- CSV Data Handling
 
-### 2. Book Rating Distribution
+## Internship
 
-A bar chart was created to show the number of books for each rating from 1 to 5.
-
-**File:** `rating_distribution.png`
-
-### 3. Price vs Rating
-
-A scatter plot was created to examine the relationship between book price and rating.
-
-**File:** `price_vs_rating.png`
-
-### 4. Top 10 Most Expensive Books
-
-A horizontal bar chart was created to identify the 10 most expensive books in the dataset.
-
-**File:** `top_10_expensive_books.png`
-
-## Key Insights
-
-- Book prices vary considerably across the dataset.
-- Books are available across rating levels from 1 to 5.
-- The price vs rating visualization shows no strong visible relationship between price and rating.
-- The calculated correlation between price and rating was approximately 0.028, indicating almost no linear relationship.
-- A small number of books have considerably higher prices than most other books.
-- The top 10 visualization makes it easier to identify the most expensive books.
-
-## Project Structure
-
-CodeAlpha_DataVisualization/
-
-├── books_dataset.csv  
-├── visualization.py  
-├── price_distribution.png  
-├── rating_distribution.png  
-├── price_vs_rating.png  
-├── top_10_expensive_books.png  
-└── README.md
-
-## Conclusion
-
-The visualizations provide a clear understanding of the book dataset and make important patterns easier to interpret.
-
-The analysis shows that book price and rating have almost no linear relationship in this dataset.
-
-## Internship Information
-
-Program: CodeAlpha Data Analytics Internship
-
-Task: Task 3 – Data Visualization
+**Organization:** CodeAlpha  
+**Program:** Data Analytics Internship
