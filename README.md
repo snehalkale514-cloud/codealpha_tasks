@@ -1,18 +1,18 @@
-# CodeAlpha Internship – Task 2: Exploratory Data Analysis
+# CodeAlpha Internship – Task 3: Data Visualization
 
 ## Project Overview
 
 This project was completed as part of the CodeAlpha Data Analytics Internship.
 
-The objective of this task is to perform Exploratory Data Analysis (EDA) on a book dataset collected through web scraping.
+The objective of this task is to transform the book dataset into meaningful visualizations using Python and Matplotlib.
 
-The analysis helps understand the structure of the dataset, identify patterns, check data quality, and generate useful insights.
+The visualizations help identify patterns in book prices, ratings, and the relationship between price and rating.
 
 ## Dataset
 
 The dataset contains information about books collected from the Books to Scrape website.
 
-### Columns
+### Columns Used
 
 - Title
 - Price
@@ -24,48 +24,58 @@ The dataset contains information about books collected from the Books to Scrape 
 
 - Python
 - Pandas
+- Matplotlib
 
-## EDA Performed
+## Visualizations Created
 
-The following analysis was performed:
+### 1. Book Price Distribution
 
-1. Loaded the dataset using Pandas.
-2. Displayed the first few records.
-3. Checked the number of rows and columns.
-4. Checked column names and data types.
-5. Checked for missing values.
-6. Checked for duplicate records.
-7. Calculated descriptive statistics.
-8. Calculated average, minimum, and maximum prices.
-9. Analyzed book ratings.
-10. Identified the cheapest and most expensive books.
-11. Identified books above the average price.
-12. Detected price outliers using the IQR method.
-13. Calculated the correlation between price and rating.
-14. Generated final insights from the analysis.
+A histogram was created to show how book prices are distributed across the dataset.
 
-## Key Findings
+**File:** `price_distribution.png`
 
-- The dataset contains information about books, including their title, price, rating, availability, and URL.
-- The dataset was checked for missing values and duplicate records.
+### 2. Book Rating Distribution
+
+A bar chart was created to show the number of books for each rating from 1 to 5.
+
+**File:** `rating_distribution.png`
+
+### 3. Price vs Rating
+
+A scatter plot was created to examine the relationship between book price and rating.
+
+**File:** `price_vs_rating.png`
+
+### 4. Top 10 Most Expensive Books
+
+A horizontal bar chart was created to identify the 10 most expensive books in the dataset.
+
+**File:** `top_10_expensive_books.png`
+
+## Key Insights
+
 - Book prices vary considerably across the dataset.
-- Books have ratings ranging from 1 to 5.
-- Some books have unusually high prices and can be considered price outliers.
-- The correlation between price and rating is 0.028.
-- This indicates almost no linear relationship between book price and rating.
-- Therefore, a higher-priced book does not necessarily have a higher rating.
+- Books are available across rating levels from 1 to 5.
+- The price vs rating visualization shows no strong visible relationship between price and rating.
+- The calculated correlation between price and rating was approximately 0.028, indicating almost no linear relationship.
+- A small number of books have considerably higher prices than most other books.
+- The top 10 visualization makes it easier to identify the most expensive books.
 
 ## Project Structure
 
-CodeAlpha_EDA/
+CodeAlpha_DataVisualization/
 
-├── eda_analysis.py  
 ├── books_dataset.csv  
+├── visualization.py  
+├── price_distribution.png  
+├── rating_distribution.png  
+├── price_vs_rating.png  
+├── top_10_expensive_books.png  
 └── README.md
 
 ## Conclusion
 
-The Exploratory Data Analysis provided a better understanding of the book dataset and identified important patterns related to price, rating, availability, and outliers.
+The visualizations provide a clear understanding of the book dataset and make important patterns easier to interpret.
 
 The analysis shows that book price and rating have almost no linear relationship in this dataset.
 
@@ -73,4 +83,4 @@ The analysis shows that book price and rating have almost no linear relationship
 
 Program: CodeAlpha Data Analytics Internship
 
-Task: Task 2 – Exploratory Data Analysis
+Task: Task 3 – Data Visualization
